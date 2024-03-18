@@ -15,5 +15,5 @@ jobs:
       
       - name: Print message and commit hash
         run: |
-          echo "Hello, GitHub Actions!"
+          echo "Hello, Nishant "
           echo "Commit Hash: $GITHUB_SHA"
