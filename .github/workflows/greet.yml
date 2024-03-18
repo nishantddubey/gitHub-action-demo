@@ -1,0 +1,19 @@
+name: Greet GitHub Actions
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's different
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Print message and commit hash
+        run: |
+          echo "Hello, GitHub Actions!"
+          echo "Commit Hash: $GITHUB_SHA"
